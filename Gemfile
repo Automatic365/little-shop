@@ -28,7 +28,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'stripe'
 gem 'paperclip'
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk', '~> 2.5', '>= 2.5.0'
 
 
 # Use Capistrano for deployment
