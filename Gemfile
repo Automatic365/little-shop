@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 7.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -12,14 +12,14 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 gem 'unicorn'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -27,7 +27,7 @@ gem 'unicorn'
 gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'stripe'
-gem 'paperclip'
+gem 'paperclip', '>= 5.1.0'
 gem 'aws-sdk', '~> 2.3'
 
 
@@ -37,20 +37,20 @@ gem 'aws-sdk', '~> 2.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.2'
   gem 'pry-rails'
   gem 'launchy'
-  gem 'capybara'
+  gem 'capybara', '>= 2.8.0'
   gem 'shoulda'
   gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
   gem 'database_cleaner'
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", ">= 4.8.0"
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console', '>= 3.4.0'
+  gem 'listen', '~> 3.1.0'
 end
 
 gem 'rails_12factor', group: :production
